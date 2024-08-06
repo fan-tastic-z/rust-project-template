@@ -1,5 +1,13 @@
 # Rust 项目的初始化模版
 
+开发项目时，会有不少关于项目的ci, lint, typo等配置，通过该模板创建项目，帮助快速构建这些配置：
+
+- github action 配置，用于在CI对代码进行完整的检查和构建
+- pre-commit 配置，用于在commit时进行代码规范检查，如: `cargo fmt  -- --check`, `cargo deny check -d`, `cargo clippy`, `typos`,等
+- cargo deny 配置，用于检查rust依赖的安全性
+- cliff 配置，用于自动生成CHANGELOG
+- typo 配置，用于检查代码中的拼写错误
+
 ## 安装相关工具
 
 ### 安装 cargo generate
